@@ -3,5 +3,4 @@ _*
 *.exe
 *.out
 .*
-_putchar.c
 *main.c
