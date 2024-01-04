@@ -54,7 +54,7 @@ bst_t *bst_remove(bst_t *root, int value)
 
 		root->n = temp->n;
 
-		right = bst_remove(root->right, temp->n);
+		root->right = bst_remove(root->right, temp->n);
 	}
 	return (root);
 }
