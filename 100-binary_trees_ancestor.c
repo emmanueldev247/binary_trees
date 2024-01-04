@@ -8,7 +8,8 @@
  * Return: pointer to the lowest common ancestor node of the two given node
  *			or NULL (no ancestor)
  **/
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(const binary_tree_t
+		*first, const binary_tree_t *second)
 {
 	size_t f_depth, s_depth, diff, i;
 	binary_tree_t *f_temp, *s_temp;
