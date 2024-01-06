@@ -8,7 +8,7 @@
  */
 int avl_helper(const binary_tree_t *tree)
 {
-	size_t ltree_h, rtree_h;
+	int ltree_h, rtree_h;
 
 	if (tree == NULL)
 		return (1);
@@ -19,7 +19,7 @@ int avl_helper(const binary_tree_t *tree)
 	ltree_h = binary_tree_height(tree->left);
 	rtree_h = binary_tree_height(tree->right);
 
-	if (labs(ltree_h - rtree_h) > 1)
+	if (abs(ltree_h - rtree_h) > 1)
 		return (0);
 	else
 		return (avl_helper(tree->left) && avl_helper(tree->right));
